@@ -3,8 +3,9 @@
  * Info : An img filter library based on opencv4.x
  * Version : 1.0.0
  * Email : youhengchan@qq.com
- * Usage : PLZ refer to README.txt
+ * Usage : PLZ refer to README.md
  * Published : 10/5/2019
+ * Site : https://github.com/youhengchan/NaiveFilters
  * License : MIT
  */
 
