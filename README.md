@@ -1,19 +1,25 @@
-# NaiveFilters
-An auxiliary image filter library based on opencv4.x  
-Easy to use with only 4 lines code.
-  
+﻿# NaiveFilters
+
+***An auxiliary image filter library based on opencv4.x***
+
+***Easy to use with only 4 lines code.***
+ &nbsp;  
+ &nbsp;  
+&nbsp;  
+———————————————————————————————      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NaiveFilter 是一个用于处理图片的滤镜库   
 ———————————————————————————————    
-	       NaiveFilter 是一个用于处理图片的滤镜库   
-———————————————————————————————  
-  
-		      NaiveFilter 中文文档  
+&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NaiveFilter 中文文档  
   
 作者： 陈汉轩 HNU  
 邮箱：youhengchan@qq.com  
 发布时间：9 / 30 / 2019  
 开源协议： MIT    
-  
-/********************************特性简介*******************************\  
+   &nbsp;  
+ &nbsp;  
+ &nbsp;  
+/*********************************\*特性简介\*************************************\  
   
 @基于 opencv4.x 和 C++ 开发，未封装opencv的最基本的操作如读入  
 和保存，在使用NaiveFilter之前需要首先安装opencv4.x  
@@ -28,43 +34,64 @@ NaiveFilter 因你更强大
 @后期计划加入实时处理功能和更多的基于ML方法实现的上妆卸妆效果  
 （针对人物进行自动识别和关键点标定处理，对视频流进行处理速度优化）  
   
-\***********************************************************************/  
+\\****************************************************************************/  
   
+  &nbsp;  
+ &nbsp;  
+ &nbsp;  
+
   
-  
-/*****************************安装与使用*******************************\  
-       
-            NaiveFilter的使用十分简单，一共只需要5步，4行代码  
+/*********************************\安装与使用\**********************************\    
+&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`NaiveFilter的使用十分简单，一共只需要5步，4行代码 `  
+&nbsp;  
+
+
   
 第一步：  
 git clone 并导入库到你的项目中  
+`git clone https://github.com/youhengchan/NaiveFilters.git`  
+
 将naivefilter.h和naivefilter.cpp导入对应的工程下  
-  
+&nbsp;    
+&nbsp;   
+
 第二步：  
 导入头文件  
-include "naivefilter.h"  
-  
+`include "naivefilter.h"  `
+&nbsp;    
+&nbsp;   
 第三步：  
 使用命名空间  
-using namespace nf  
-  
+`using namespace nf  `
+&nbsp;    
+&nbsp;   
 为了避免命名冲突，建议使用nf :: NaiveFilter，尽量不要直接使用  
-上面的using namespace nf  
-  
+上面的`using namespace nf  `
+&nbsp;    
+&nbsp;  
+
+
 第四步：  
 创建一个NaiveFilter对象  
-nf :: NaiveFilter nv;  
-  
+`nf :: NaiveFilter nv;  `
+ &nbsp;  
+ &nbsp;   
 第五步：  
 一行代码调用  
-Mat dstImg = nv.nostalgia(srcImg);  
+`Mat dstImg = nv.nostalgia(srcImg);  `  
+&nbsp;  
+这个方法将返回给你一张调色好的怀旧风格的图片
+
+&nbsp;    
+\\****************************************************************************/  
   
-\***********************************************************************/  
+   &nbsp;  
+ &nbsp;  
+ &nbsp;  
   
   
-  
-  
-/***********************API说明&实现原理****************************\    
+/*****************************\API说明&实现原理\********************************\    
   
 01：nf :: NaiveFilter :: cv :: Mat nostalgia (cv :: Mat & I);  // 怀旧风格  
 基于调色实现，对每一个点进行局部的点运算，调色系数配比采用：  
@@ -82,7 +109,7 @@ B = 0.272R + 0.534G + 0.131B
 nf :: NaiveFilter :: cv :: Mat   
   
   
-\***********************************************************************/  
+\*****************************************************************************/  
 
 
 
