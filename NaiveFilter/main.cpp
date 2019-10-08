@@ -9,7 +9,7 @@ using namespace std;
 int main(void) {
 
     // Import sample source image
-    String dir = "/home/chenhanxuan/Pictures/tree.png";
+    String dir = "../media/lena512color.tiff";
     Mat srcImg = imread(dir, IMREAD_COLOR);
     if (srcImg.empty()) {
         cout << "Read img error" << endl;
@@ -32,6 +32,10 @@ int main(void) {
     imshow("NOSTALGIA IMG", nostalgiaImg);
     imshow("CAMEO IMG", cameoImg);
     imshow("CARVE IMG", carveImg);
+    String baseAddr = "../NaiveFilters/NaiveFilter/Samples/";
+    imwrite(baseAddr + "NostalgiaSample.tiff", nostalgiaImg);
+    imwrite(baseAddr + "cameoSample.tiff", cameoImg);
+    imwrite(baseAddr + "carveSample.tiff", carveImg);
 
     waitKey();
     return 0;

@@ -80,3 +80,4 @@ cv :: Mat NaiveFilter :: cameo (cv :: Mat & I) {
     cv :: cvtColor(ret, retGray, cv :: COLOR_BGR2GRAY);
     return retGray;
 }
+

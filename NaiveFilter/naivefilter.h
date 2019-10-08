@@ -24,26 +24,7 @@ namespace nf {
             cv :: Mat nostalgia (cv :: Mat & I);
             cv :: Mat cameo (cv :: Mat & I);
             cv :: Mat carve (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
 
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
-//            cv :: Mat nostalgia (cv :: Mat & I);
             // Image processing with ML
 
     };
