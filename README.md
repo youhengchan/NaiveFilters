@@ -16,7 +16,7 @@
 邮箱：youhengchan@qq.com  
 发布时间：9 / 30 / 2019  
 开源协议： MIT    
-   &nbsp;  
+ &nbsp;  
  &nbsp;  
  &nbsp;  
  
@@ -101,9 +101,11 @@ G = 0.349R + 0.686G + 0.168B
 B = 0.272R + 0.534G + 0.131B  
   
 02：nf :: NaiveFilter :: cv :: Mat cameo (cv :: Mat & I)； // 浮雕效果  
-  
-最后得到的函数使用OpenCV内置的图片转换函数cvtColor()  
-将对应的图像进行灰度处理  
+
+首先使用图像一阶梯度算子对图像进行处理，得到边缘图像
+然后对得到的图像使用OpenCV内置的转换函数cvtColor()  
+将对应的图像进行灰度处理得到结果  
+
 
   
 03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);  // 雕刻效果  
