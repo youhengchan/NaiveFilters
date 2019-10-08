@@ -1,4 +1,5 @@
 ﻿# NaiveFilters
+&nbsp;  
 
 ***An auxiliary image filter library based on opencv4.x***
 
@@ -47,20 +48,20 @@ NaiveFilter 因你更强大
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`NaiveFilter的使用十分简单，一共只需要5步，4行代码 `  
 &nbsp;  
   
-第一步：  
+**第一步**    
 git clone 并导入库到你的项目中  
 `git clone https://github.com/youhengchan/NaiveFilters.git`  
 将naivefilter.h和naivefilter.cpp导入对应的工程下  
 &nbsp;    
 &nbsp;   
 
-第二步：  
+**第二步**    
 导入头文件  
 `include "naivefilter.h"  `
 &nbsp;    
 &nbsp;   
 
-第三步：  
+**第三步**    
 使用命名空间  
 `using namespace nf  `
 &nbsp;    
@@ -71,13 +72,13 @@ git clone 并导入库到你的项目中
 &nbsp;    
 &nbsp;  
 
-第四步：  
+**第四步**    
 创建一个NaiveFilter对象  
 `nf :: NaiveFilter nv;  `
  &nbsp;  
  &nbsp;   
  
-第五步：  
+**第五步**    
 一行代码调用  
 `Mat dstImg = nv.nostalgia(srcImg);  `  
 这个方法将返回给你一张调色好的怀旧风格的图片　　
