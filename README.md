@@ -20,7 +20,7 @@
  &nbsp;  
  &nbsp;  
  
-**特性简介**
+## **特性简介**  
   
 @基于 opencv4.x 和 C++ 开发，未封装opencv的最基本的操作如读入  
 和保存，在使用NaiveFilter之前需要首先安装opencv4.x  
@@ -37,12 +37,12 @@ NaiveFilter 因你更强大
   
 
   
-  &nbsp;  
+ &nbsp;  
  &nbsp;  
  &nbsp;  
 
   
-**安装与使用**
+## **安装与使用**  
 &nbsp;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`NaiveFilter的使用十分简单，一共只需要5步，4行代码 `  
 &nbsp;  
@@ -90,9 +90,10 @@ git clone 并导入库到你的项目中
 
   
   
-**API说明&实现原理**
-  
-01：nf :: NaiveFilter :: cv :: Mat nostalgia (cv :: Mat & I);  // 怀旧风格  
+## **API说明&实现原理**  
+
+### 怀旧风格  
+`nf :: NaiveFilter :: cv :: Mat nostalgia (cv :: Mat & I);`    
 基于调色实现，对每一个点进行局部的点运算，调色系数配比采用：  
 R = 0.393R + 0.769Ｇ + 0.189B  
 G = 0.349R + 0.686G + 0.168B  
@@ -102,7 +103,8 @@ B = 0.272R + 0.534G + 0.131B
 &nbsp;　　
 &nbsp; 　
 
-02：nf :: NaiveFilter :: cv :: Mat cameo (cv :: Mat & I)； // 浮雕效果  
+### 浮雕效果  
+`nf :: NaiveFilter :: cv :: Mat cameo (cv :: Mat & I)；`  
 首先使用图像一阶梯度算子对图像进行处理，得到边缘图像  
 然后对得到的图像使用OpenCV内置的转换函数cvtColor()  
 将对应的图像进行灰度处理得到结果  
@@ -110,8 +112,9 @@ B = 0.272R + 0.534G + 0.131B
 &nbsp;    
 &nbsp;　　
 &nbsp; 　
-  
-03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);  // 雕刻效果  
+
+### 雕刻效果  
+03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);   
 雕刻和浮雕的不同仅仅是处理顺序的不同   
 ![雕刻](https://github.com/youhengchan/NaiveFilters/blob/master/NaiveFilter/Samples/carveSample.jpeg)  
 &nbsp;    
