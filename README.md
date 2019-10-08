@@ -80,8 +80,7 @@ git clone 并导入库到你的项目中
 第五步：  
 一行代码调用  
 `Mat dstImg = nv.nostalgia(srcImg);  `  
-&nbsp;  
-这个方法将返回给你一张调色好的怀旧风格的图片
+这个方法将返回给你一张调色好的怀旧风格的图片　　
 
 &nbsp;    
 &nbsp;　　
@@ -104,7 +103,6 @@ B = 0.272R + 0.534G + 0.131B
 &nbsp; 　
 
 02：nf :: NaiveFilter :: cv :: Mat cameo (cv :: Mat & I)； // 浮雕效果  
-
 首先使用图像一阶梯度算子对图像进行处理，得到边缘图像　　
 然后对得到的图像使用OpenCV内置的转换函数cvtColor()　　  
 将对应的图像进行灰度处理得到结果  
@@ -114,8 +112,6 @@ B = 0.272R + 0.534G + 0.131B
 &nbsp; 　
   
 03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);  // 雕刻效果  
-  
-nf :: NaiveFilter :: cv :: Mat   
 雕刻和浮雕的不同仅仅是处理顺序的不同　　
 
 &nbsp;    
