@@ -97,7 +97,6 @@ git clone 并导入库到你的项目中
 R = 0.393R + 0.769Ｇ + 0.189B  
 G = 0.349R + 0.686G + 0.168B  
 B = 0.272R + 0.534G + 0.131B  
-效果：　　
 ![怀旧](https://github.com/youhengchan/NaiveFilters/blob/master/NaiveFilter/Samples/NostalgiaSample.jpeg)  
 &nbsp;    
 &nbsp;　　
@@ -107,15 +106,13 @@ B = 0.272R + 0.534G + 0.131B
 首先使用图像一阶梯度算子对图像进行处理，得到边缘图像  
 然后对得到的图像使用OpenCV内置的转换函数cvtColor()  
 将对应的图像进行灰度处理得到结果  
-效果：　　
 ![浮雕](https://github.com/youhengchan/NaiveFilters/blob/master/NaiveFilter/Samples/cameoSample.jpeg)  
 &nbsp;    
 &nbsp;　　
 &nbsp; 　
   
 03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);  // 雕刻效果  
-雕刻和浮雕的不同仅仅是处理顺序的不同　　
-效果：  
+雕刻和浮雕的不同仅仅是处理顺序的不同   
 ![雕刻](https://github.com/youhengchan/NaiveFilters/blob/master/NaiveFilter/Samples/carveSample.jpeg)  
 &nbsp;    
 &nbsp;　　
