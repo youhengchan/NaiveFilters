@@ -33,9 +33,9 @@ int main(void) {
     imshow("CAMEO IMG", cameoImg);
     imshow("CARVE IMG", carveImg);
     String baseAddr = "../NaiveFilters/NaiveFilter/Samples/";
-    imwrite(baseAddr + "NostalgiaSample.tiff", nostalgiaImg);
-    imwrite(baseAddr + "cameoSample.tiff", cameoImg);
-    imwrite(baseAddr + "carveSample.tiff", carveImg);
+    imwrite(baseAddr + "NostalgiaSample.jpeg", nostalgiaImg);
+    imwrite(baseAddr + "cameoSample.jpeg", cameoImg);
+    imwrite(baseAddr + "carveSample.jpeg", carveImg);
 
     waitKey();
     return 0;
