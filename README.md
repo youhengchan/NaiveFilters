@@ -50,7 +50,6 @@ NaiveFilter 因你更强大
 第一步：  
 git clone 并导入库到你的项目中  
 `git clone https://github.com/youhengchan/NaiveFilters.git`  
-
 将naivefilter.h和naivefilter.cpp导入对应的工程下  
 &nbsp;    
 &nbsp;   
@@ -85,10 +84,10 @@ git clone 并导入库到你的项目中
 这个方法将返回给你一张调色好的怀旧风格的图片
 
 &nbsp;    
-&nbsp;
-&nbsp;  
-&nbsp;  
-&nbsp;  
+&nbsp;　　
+&nbsp;  　
+&nbsp;  　
+&nbsp;  　
 
   
   
@@ -99,21 +98,30 @@ git clone 并导入库到你的项目中
 R = 0.393R + 0.769Ｇ + 0.189B  
 G = 0.349R + 0.686G + 0.168B  
 B = 0.272R + 0.534G + 0.131B  
-  
+
+&nbsp;    
+&nbsp;　　
+&nbsp; 　
+
 02：nf :: NaiveFilter :: cv :: Mat cameo (cv :: Mat & I)； // 浮雕效果  
 
-首先使用图像一阶梯度算子对图像进行处理，得到边缘图像
-然后对得到的图像使用OpenCV内置的转换函数cvtColor()  
+首先使用图像一阶梯度算子对图像进行处理，得到边缘图像　　
+然后对得到的图像使用OpenCV内置的转换函数cvtColor()　　  
 将对应的图像进行灰度处理得到结果  
 
-
+&nbsp;    
+&nbsp;　　
+&nbsp; 　
   
 03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);  // 雕刻效果  
   
 nf :: NaiveFilter :: cv :: Mat   
 雕刻和浮雕的不同仅仅是处理顺序的不同　　
 
-
+&nbsp;    
+&nbsp;　　
+&nbsp; 　
+　　
   
   
   
