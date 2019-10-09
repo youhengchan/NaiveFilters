@@ -115,7 +115,7 @@ B = 0.272R + 0.534G + 0.131B
 &nbsp; 　
 
 ### 雕刻效果  
-`03：nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);`   
+`nf :: NaiveFilter :: cv :: Mat carve (cv :: Mat & I);`   
 雕刻和浮雕的不同仅仅是处理顺序的不同   
 ![雕刻](https://github.com/youhengchan/NaiveFilters/blob/master/NaiveFilter/Samples/carveSample.jpeg)  
 &nbsp;    
